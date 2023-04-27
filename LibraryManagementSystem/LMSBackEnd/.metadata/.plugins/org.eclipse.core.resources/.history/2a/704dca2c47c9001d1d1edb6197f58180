@@ -1,0 +1,33 @@
+package JavaNewFeatures;
+
+public class Coding1 {
+
+	public static void main(String[] args) throws InterruptedException {
+
+//		int[] arr = { 10, 20, 30, 30, 30, 40, 50, 40 };
+//		List<Integer> map = Arrays.stream(arr).boxed()
+//				.collect(Collectors.groupingBy(x -> x, Collectors.counting())).entrySet().stream().filter(x-> x.getValue()==1).map(x->x.getKey()).collect(Collectors.toList());
+//		System.out.println(map);
+
+//		int[] array = { 2, 3, 6, 4, 9, 0, 11 };
+//		int num = 9;
+//
+//		for (int i = 0; i < array.length; i++) {
+//			int sum = 0;
+//			for (int j = i; j < array.length; j++) {
+//				if (sum + array[j] == num) {
+//					System.out.println("starting = " + i + " ending = " + j);
+//					sum = sum + array[j];
+//				} else if (sum + array[j] < num) {
+//					sum = sum + array[j];
+//				} else {
+//					break;
+//				}
+//			}
+//		}
+
+		int n=5;
+		System.out.println(2<<4);
+	}
+
+}

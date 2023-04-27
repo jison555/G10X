@@ -1,0 +1,40 @@
+package com.example.jasper;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class EOFClass {
+	
+	public static void main(String[] args) {
+		
+		{
+			Scanner in = new Scanner(System.in);
+			Map<String, Integer> map = new  HashMap<>();
+			String findName[] = new String[3];
+		System.out.println("enter number");
+			int n=in.nextInt();
+		//	in.nextLine();
+			for(int i=0;i<n;i++)
+			{
+				System.out.println("enter name");
+				String name=in.nextLine();
+				System.out.println("enter phonenum");
+				int phone=in.nextInt();
+				map.put(name, phone);
+				//in.nextLine();
+			}
+			
+			for(int i=0;i<findName.length;i++) {
+				findName[i] = in.nextLine();
+			}
+			
+			for(int i=0;i<findName.length;i++) {
+				if(map.containsKey(findName[i])){
+					System.out.println(map.get(findName[i]));
+				}
+			}
+		}
+	}
+
+}

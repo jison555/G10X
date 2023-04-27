@@ -1,0 +1,35 @@
+import java.math.BigInteger;
+
+public class HashMapClass {
+
+	public static void main(String[] args) {
+
+		int[] arr = { 10, 90, 30, 40, 50, 60, 55, 45, 35 };
+
+		String a = "11";
+		String b = "1";
+		
+		System.out.println(Integer.parseInt(a, 2));
+		System.out.println(Integer.parseInt(b, 4));
+		
+		
+
+//		long count = Arrays.stream(arr).distinct().count();
+//		int max = Arrays.stream(arr).max().getAsInt();
+//		int index = 0;
+		int length = arr.length;
+
+		int max = arr[length - 1];
+		System.out.println(arr[length - 1]);
+
+		for (int i = length - 2; i > 0; i--) {
+			if (arr[i] > max) {
+				System.out.println(arr[i]);
+				max = arr[i];
+			}
+
+		}
+
+	}
+
+}

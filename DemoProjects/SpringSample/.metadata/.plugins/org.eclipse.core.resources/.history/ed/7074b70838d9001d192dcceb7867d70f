@@ -1,0 +1,47 @@
+import java.util.Arrays;
+
+public class HashMapClass {
+
+	public static void main(String[] args) {
+
+		int[] arr = {2,6,9,1,3,7,5,0,4};
+		int num = 6;		
+		Arrays.sort(arr);
+		int left_pointer=0;
+		int right_pointer=arr.length-1;
+		
+		while(left_pointer<right_pointer && (right_pointer-left_pointer>=4)) {
+			
+			findSum(left_pointer,right_pointer,arr);
+			
+			if(arr[left_pointer]+arr[right_pointer]>num) {
+				right_pointer--;
+			}else if(arr[left_pointer]+arr[right_pointer]<num) {
+				left_pointer++;
+			}else if(arr[left_pointer]+arr[right_pointer]==num) {
+				if(right_pointer -  left_pointer==4) {
+					System.out.println("finded");
+					System.exit(0);
+				}else {
+					right_pointer--;
+				}
+			}
+			
+		}
+
+	}
+
+	private static int findSum(int left_pointer, int right_pointer,int[] arr) {
+		
+		int sum=0;
+		for(int i=left_pointer;i<=right_pointer;i++) {
+			sum = sum+arr[i];
+		}
+		
+		return sum;
+		
+		
+		
+	}
+
+}

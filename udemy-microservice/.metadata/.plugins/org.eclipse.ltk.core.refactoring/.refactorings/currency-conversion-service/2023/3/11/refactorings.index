@@ -1,0 +1,3 @@
+1678633575458	Rename package 'currencyconversionservice'
+1678633597888	Rename package 'com.udemy.microservices.curencyconversionService'
+1678636729687	Extract local variable 'retriveExchangeValue'

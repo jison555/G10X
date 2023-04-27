@@ -1,0 +1,27 @@
+package JavaNewFeatures;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+import java.util.Scanner;
+
+public class Coding1 {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		
+		List<Integer> list = Arrays.asList(10, 20, 30, 30, 30, 40, 50, 40 );
+//		List<Integer> map = Arrays.stream(arr).boxed()
+//				.collect(Collectors.groupingBy(x -> x, Collectors.counting())).entrySet().stream().filter(x-> x.getValue()==1).map(x->x.getKey()).collect(Collectors.toList());
+//		System.out.println(map);
+//System.out.println(list.stream().mapToInt(x->x));
+
+Optional<String> opt = null;
+  String strs =  opt.isPresent()?opt.get():"null value";
+  System.out.println(strs);
+
+
+
+	}
+
+}

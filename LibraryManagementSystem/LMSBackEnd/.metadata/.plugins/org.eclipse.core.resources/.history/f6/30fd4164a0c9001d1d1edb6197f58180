@@ -1,0 +1,24 @@
+package JavaNewFeatures;
+
+import java.util.Arrays;
+
+public class Coding1 {
+	
+	public static void main(String[] args) throws InterruptedException {
+		
+
+//		int[] arr = { 10, 20, 30, 30, 30, 40, 50, 40 };
+//		List<Integer> map = Arrays.stream(arr).boxed()
+//				.collect(Collectors.groupingBy(x -> x, Collectors.counting())).entrySet().stream().filter(x-> x.getValue()==1).map(x->x.getKey()).collect(Collectors.toList());
+//		System.out.println(map);
+
+		String str = "hai hello world";
+		
+		String[] strArr =  str.split(" ");
+		int length = strArr.length;
+		Arrays.stream(strArr).skip(length-1).forEach(System.out::println);
+		
+		
+	}
+
+}

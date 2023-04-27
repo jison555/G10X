@@ -1,0 +1,31 @@
+import java.util.Arrays;
+
+public class HashMapClass {
+
+	public static void main(String[] args) {
+
+		int[] arr = { 20, 70, 40, -1, 60, 30 };
+		System.out.println(Arrays.toString(arr));
+
+		for (int i = 0; i < arr.length-1; i++) {
+
+			int max = greatest(i + 1, arr);
+			arr[i] = max;	
+
+		}
+		arr[arr.length-1] = -1;
+		System.out.println(Arrays.toString(arr));
+	}
+
+	private static int greatest(int i, int[] arr) {
+		int max = arr[i];
+		for (int j = i; j < arr.length; j++) {
+
+			max = arr[j] > max ? arr[j] : max;
+		}
+
+		return max;
+
+	}
+
+}

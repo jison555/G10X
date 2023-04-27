@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.fitness.service&apos; to &apos;com.fitness.service.userservice&apos;&#x0D;&#x0A;- Original project: &apos;user-service&apos;&#x0D;&#x0A;- Original element: &apos;user-service/src/main/java/com.fitness.service&apos;&#x0D;&#x0A;- Renamed element: &apos;user-service/src/main/java/com.fitness.service.userservice&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.fitness.service&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.fitness.service" name="com.fitness.service.userservice" qualified="false" references="true" stamp="1679208667777" textual="false" version="1.0"/>
+</session>

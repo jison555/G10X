@@ -1,0 +1,24 @@
+package JavaNewFeatures;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.StringJoiner;
+import java.util.stream.Collectors;
+
+public class StringJoiners {
+
+	public static void main(String[] args) {
+
+		StringJoiner stj = new StringJoiner(",", "#", "!");
+		stj.add("hii").add("--");
+		stj.add("people");
+		System.out.println(stj.toString());
+
+		List<Integer> numbers = Arrays.asList(10, 30, 20, 50);
+		 String commaSeparatedNumbers = numbers.stream()
+				      .map(i -> i.toString())
+				      .collect(Collectors.joining(", "));
+		 System.out.println(commaSeparatedNumbers);
+	}
+
+}

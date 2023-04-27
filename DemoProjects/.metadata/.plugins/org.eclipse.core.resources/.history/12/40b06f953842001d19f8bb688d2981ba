@@ -1,0 +1,11 @@
+package com.example.demo.entity;
+
+@Enti
+public class Teachers {
+	
+	private int id;
+	private String name;
+	private String language;
+	
+
+}

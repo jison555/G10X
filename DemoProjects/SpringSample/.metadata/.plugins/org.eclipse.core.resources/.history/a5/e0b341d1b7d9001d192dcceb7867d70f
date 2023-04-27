@@ -1,0 +1,35 @@
+import java.util.Arrays;
+
+public class HashMapClass {
+
+	public static void main(String[] args) {
+
+		int[] arr = { -10, 20, -30, 40, 50, -60 };
+		int length = arr.length;
+		int left_pointer = arr[0];
+		int right_pointer = arr[length - 1];
+
+		while (left_pointer < right_pointer) {
+
+			if (arr[left_pointer] > 0 && arr[right_pointer] < 0) {
+				left_pointer++;
+				right_pointer--;
+			} else if (arr[left_pointer] < 0 && arr[right_pointer] > 0) {
+				int temp = arr[left_pointer];
+				arr[left_pointer] = arr[right_pointer];
+				arr[right_pointer] = temp;
+				left_pointer--;
+				right_pointer++;
+			}else if(arr[left_pointer] > 0 && arr[right_pointer] > 0) {
+				left_pointer++;
+			}else if(arr[left_pointer] < 0 && arr[right_pointer] < 0) {
+				right_pointer++;
+			}
+
+		}
+		
+		System.out.println(Arrays.toString(arr));
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package JavaNewFeatures;
+
+import java.util.StringJoiner;
+
+public class StringJoiners {
+	
+	public static void main(String[] args) {
+		
+		StringJoiner stj = new StringJoiner(",");
+		stj.add("hii");
+		stj.add("people");
+	}
+
+}

@@ -1,0 +1,40 @@
+package JavaNewFeatures;
+
+public class Coding1 {
+	
+	static int[] arr = new int[10];
+	
+	public static int pop() {
+		
+		for(int i=0;i<arr.length;i++) {
+			System.out.println(arr[i]);
+		}
+		
+		if(arr.length!=0) {
+			return arr[arr.length-1];
+		}else {
+			return 0;
+		}
+	}
+	
+	public static int push() {
+		if(arr.length) {
+			
+		}
+	}
+	
+	
+
+	public static void main(String[] args) throws InterruptedException {
+
+//		int[] arr = { 10, 20, 30, 30, 30, 40, 50, 40 };
+//		List<Integer> map = Arrays.stream(arr).boxed()
+//				.collect(Collectors.groupingBy(x -> x, Collectors.counting())).entrySet().stream().filter(x-> x.getValue()==1).map(x->x.getKey()).collect(Collectors.toList());
+//		System.out.println(map);
+
+
+		
+		
+	}
+
+}

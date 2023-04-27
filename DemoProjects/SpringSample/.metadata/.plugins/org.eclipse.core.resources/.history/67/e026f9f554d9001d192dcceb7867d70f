@@ -1,0 +1,19 @@
+public class HashMapClass {
+
+	public static void main(String[] args) {
+
+		int[] arr = { 10, 20, 30, 40, 50, 60 };
+		int temp = arr[1];
+		int temp1 = arr[1];
+
+		for (int i = 0; i < arr.length - 2; i++) {
+			temp = arr[i];
+			temp1 = arr[i + 1];
+			arr[i + 1] = temp;
+			
+
+		}
+
+	}
+
+}

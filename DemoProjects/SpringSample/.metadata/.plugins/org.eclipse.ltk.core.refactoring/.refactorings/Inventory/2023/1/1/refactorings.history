@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;Dockerfile&apos; to &apos;Inventory&apos;" description="Move &apos;Dockerfile&apos; to &apos;Inventory&apos;" destination="/Inventory" element1="src/Dockerfile" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1672903241329" updateReferences="true"/>
+</session>

@@ -1,0 +1,27 @@
+
+<form *ngIf="showOrHide">
+    <input type="text" placeholder="enter name"><br>
+    <input type="text" placeholder="enter password"><br>
+    <button type="submit">submit</button>
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">NAME</th>
+            <th scope="col">PRICE</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+        <tbody>
+        <tr *ngFor="let prod of products">
+                <td>{{prod.prodId}}</td>
+                <td>{{prod.name | uppercase}}</td>
+                <td>{{prod.price}}</td>
+</tr>
+</tbody>
+</table>
+            
+
+<h1 routerLink="/login"></h1>

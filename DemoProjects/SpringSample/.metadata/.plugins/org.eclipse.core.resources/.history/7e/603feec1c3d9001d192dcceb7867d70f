@@ -1,0 +1,27 @@
+import java.util.HashSet;
+import java.util.Set;
+
+public class HashMapClass {
+
+	public static void main(String[] args) {
+
+		int[] arr = { 45, 20, 100, 23, -5, 2, -6 };
+
+		Set<Integer> set = new HashSet<>();
+		set.add(0);
+		int suba_sum = 0;
+		for (int i = 0; i < arr.length; i++) {
+			suba_sum += arr[i];
+
+			if (set.contains(suba_sum)) {
+				System.out.println("yesssss");
+				System.exit(0);
+			}
+			set.add(suba_sum);
+		}
+		
+		System.out.println("noooooooooo");
+
+	}
+
+}

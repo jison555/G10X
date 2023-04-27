@@ -1,0 +1,40 @@
+import java.util.Arrays;
+
+public class HashMapClass {
+
+	public static void main(String[] args) {
+
+		int[] arr = { 10, 20, 30, 40, 50, 60, 55, 45, 35 };
+
+		long count = Arrays.stream(arr).distinct().count();
+		int max = Arrays.stream(arr).max().getAsInt();
+		int index=0;
+
+		if (arr.length != count || arr[0] == max || arr[arr.length-1] == max) {
+			System.out.println("not valid");
+			System.exit(0);
+		}
+
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] == max) {
+				index = i;
+			}
+		}
+		for(int i=0;i<index-1;i++) {
+			if(arr[i]>arr[i+1]) {
+				System.out.println("not valid");
+				System.exit(0);
+			}
+		}
+		
+		for(int i=index;i<arr.length-1;i++) {
+			if(arr[i]<arr[i+1]) {
+				System.out.println("not valid");
+				System.exit(0);
+			}
+		}
+		System.out.println("valid");
+
+	}
+
+}
